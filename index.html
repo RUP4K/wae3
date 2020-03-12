@@ -15,7 +15,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-color: #ffffff;
-  min-height: 50%;
+  min-height: 60%;
 }
 
 .menu {
@@ -25,7 +25,6 @@ body, html {
 <body>
 
 
-<!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
   </div>
@@ -33,8 +32,13 @@ body, html {
     <h1>Project 1: Web Accessibility Evaluation</h1>
     <h3>INFO-I590 Experience Design and Evaluation of Access Technologies | Spring 2020</h3>
     <h3>Name: Rupak Javkar <br> Email: rpjavkar@iu.edu</h3>
+    <p>
+        <br><br><br>The purpose of this assignment is to evaluate the accessibility of any website, state the failures by comparing them to WCAG criterion. Afterwards we need to provide solutions for those failures, create a webpage of our own, present our findings and solutions through that webpage in such a way that it is easily accessible for individuals with various disabilities. The website I selected for this assignment/project was 
+        <a href="https://www.lingscars.com/" target="_blank">Lingscars</a>
+        . This was a website having various accessibility issues. 
+      </p>
+</div>
 
-  </div>
 </header>
 
 <div class="w3-sand w3-grayscale w3-large">
@@ -43,47 +47,70 @@ body, html {
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Error 1</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    
-    <img src="bad background example.png" alt="Italian Trulli"> >
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+    <h2>Design based: Background which can interfere witht the actual website content.</h2>
+    <h4>Fails WCAG Success Criterion 1.4.11 Non-text Contrast</h4> 
+    <p>Confusing and too colorful backgrounds can cause multiple issues. For a contrast ratio of an image to be consistent, the background image or color must not be presented in such a chaotic manner. It may interfere with the website content, and can lead to difficulties for individuals with visual disabilities.</p>
+    <img src="bad background example.png" alt="Bad background: example" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <center><br>---------------</center> 
+    <h4><br>Error 1 solution</h4> 
+    <p>Give the background either a solid color or a mind texture, so that it does not interfere with the actual content of the page in any way.</p>
+    <img src="good background example.png" alt="Bad background: example" style="width:100%;max-width:1000px" class="w3-margin-top"> >
   </div>
 </div>
 
-<!-- Error 1 -->
+<!-- Error 2 -->
 <div class="w3-container" id="about">
         <div class="w3-content" style="max-width:700px">
           <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Error 2</span></h5>
 
+          <h2>Content based: No alternate text</h2>
+    <h4>Fails WCAG Success Criterion 1.1.1 Non-text Content</h4> 
+    <p>If an image doesn't load properly, there is no way for a visually challenged person to know the context.</p>
+           
           
-          <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+          <center><br>---------------</center> 
+
+          <h4><br>Error 2 solution</h4> 
+          <p>Add a basic description of every image in the alt tag of that image.</p>
           <div class="w3-panel w3-leftbar w3-light-grey">
-            <p><i>"img src="img1.gif" alt="Man holding rental sign" height="42" width="42"" Fresh is the new sweet.</i></p>
-            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+            <p><i><span>&lt;</span>img src="img1.gif" alt="Man holding rental sign" height="42" width="42"<span>&gt;</span></i></p>
+            <p><i><span>&lt;</span>img src="img2.gif" alt="Toyota Aygo car image" height="42" width="42"<span>&gt;</span></i></p>
+
           </div>
-          <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Apple_Macintosh_Desktop.png" style="width:100%;max-width:1000px" class="w3-margin-top">
-          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-          <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
         </div>
       </div>
 
-      <!-- Error 2 -->
+      <!-- Error 3 -->
       <div class="w3-container" id="about">
               <div class="w3-content" style="max-width:700px">
                 <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Error 3</span></h5>
       
-                
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                  <p><i>"img src="img1.gif" alt="Man holding rental sign" height="42" width="42"" Fresh is the new sweet.</i></p>
-                  <p>Chef, Coffeeist and Owner: Liam Brown</p>
-                </div>
-                <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Apple_Macintosh_Desktop.png" style="width:100%;max-width:1000px" class="w3-margin-top">
-                <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-                <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+                <h2>Code based: No structural elements</h2>
+    <h4>Fails WCAG Success Criterion 2.4.10 Section Headings</h4> 
+    <p>Makes it harder for various ATs to properly convey information to the user.</p>
+                 
+               
+                <center><br>---------------</center> 
+
+                <h4><br>Error 3 solution</h4> 
+    <p>Add appropriate heading tags wherever there is a new section, to give the content a hierarchy.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i><span>&lt;</span>h1>LINGS CARS</h1<span>&gt;</span></i></p>
+      <p><i><span>&lt;</span>p>Description of the website of Lingscars.</h1<span>&gt;</span></i></p>   
+      
+      <p><i><span>&lt;</span>h2>Toyota Aygo</h1<span>&gt;</span></i></p>
+      <p><i><span>&lt;</span>p>Hatchback 5dr 998cc Petrol Manual</h1<span>&gt;</span></i></p>
+
+<p><i><span>&lt;</span>h3>Fuel</h1<span>&gt;</span></i></p>
+<p><i><span>&lt;</span>p>Petrol</h1<span>&gt;</span></i></p>
+
+<p><i><span>&lt;</span>h3>Paint</h1<span>&gt;</span></i></p>
+<p><i><span>&lt;</span>p>Non-metallic</p</h1<span>&gt;</span></i></p>
+
+<p><i><span>&lt;</span>h3>Gearbox</h1<span>&gt;</span></i></p>
+<p><i><span>&lt;</span>p>Manual</h1<span>&gt;</span></i></p>
+
+    </div>
               </div>
             </div>
 
